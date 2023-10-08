@@ -8,19 +8,17 @@ function Main({ activeTab }) {
   const [tab2Input, setTab2Input] = useState("");
   const [tab3Input, setTab3Input] = useState("");
 
-  const handleTabInputChange = (e) => {
-    if (activeTab === "Tab 1") setTab1Input(e.target.value);
-    if (activeTab === "Tab 2") setTab2Input(e.target.value);
-    if (activeTab === "Tab 3") setTab3Input(e.target.value);
+  const handleTab1InputChange = (e) => {
+    setTab1Input(e.target.value);
   };
 
-  // const handleTab2InputChange = (e) => {
-  //   setTab2Input(e.target.value);
-  // };
+  const handleTab2InputChange = (e) => {
+    setTab2Input(e.target.value);
+  };
 
-  // const handleTab3InputChange = (e) => {
-  //   setTab3Input(e.target.value);
-  // };
+  const handleTab3InputChange = (e) => {
+    setTab3Input(e.target.value);
+  };
   return (
     <div className="main">
       Main
@@ -29,7 +27,7 @@ function Main({ activeTab }) {
           <p>input 1: </p>
           <Tab1Content
             inputValue={tab1Input}
-            onInputChange={handleTabInputChange}
+            onInputChange={handleTab1InputChange}
           />
         </div>
       )}
@@ -38,7 +36,7 @@ function Main({ activeTab }) {
           <p>input 2:</p>
           <Tab2Content
             inputValue={tab2Input}
-            onInputChange={handleTabInputChange}
+            onInputChange={handleTab2InputChange}
           />
         </div>
       )}
@@ -47,7 +45,7 @@ function Main({ activeTab }) {
           <p>input 3:</p>
           <Tab3Content
             inputValue={tab3Input}
-            onInputChange={handleTabInputChange}
+            onInputChange={handleTab3InputChange}
           />
         </div>
       )}
