@@ -1,0 +1,36 @@
+.sidebar {
+  background-color: #f3f3f3;
+  height: 100vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.options li button {
+  margin-bottom: 10px;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.options li button:hover {
+  background-color: rgb(93, 23, 158);
+}
+.tab {
+  background-color: blueviolet;
+  margin-bottom: 10px;
+  padding: 10px;
+}
