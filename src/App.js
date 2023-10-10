@@ -1,6 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 import { useState } from "react";
+import AntdApp from "./components/antdApp";
 
 function App() {
   const [activeTab, setActiveTab] = useState("");
@@ -9,8 +10,7 @@ function App() {
   }
   return (
     <div className="app">
-      <Sidebar handleClick={handleClick} />
-      <Main activeTab={activeTab} />
+      <AntdApp />
     </div>
   );
 }
